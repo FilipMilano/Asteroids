@@ -50,8 +50,7 @@ def main():
                   if shot.collides_with(rock):
                        log_event("asteroid_shot")
                        shot.kill()
-                       rock.kill()
-                  
+                       rock.split()
         screen.fill("black")
         
         for graphic in drawable:
